@@ -1,0 +1,14 @@
+models = pd.DataFrame({
+    'Model': ['Logistic Regression', 'Decision Tree','Logistic Regression', 'Decision Tree','Logistic Regression', 'Decision Tree','Logistic Regression', 'Decision Tree','Logistic Regression', 'Decision Tree'],
+    'Feature Selection Method' : ['None','None','Pearson corr_fact','Pearson corr_fact','chi2 test','chi2 test','f_classif','f_classif','f_regression','f_regression'],
+    'Accuracy Score': [a1,a2,a3,a4,a5,a6,a7,a8,a9,a10],
+    'Recall Score' : [r1,r2,r3,r4,r5,r6,r7,r8,r9,r10],
+    'F1 Score' : [f1,f2,f3,f4,f5,f6,f7,f8,f9,f10],
+    'Precision Score' : [p1,p2,p3,p4,p5,p6,p7,p8,p9,p10]
+})
+
+models
+
+
+
+pd.pivot_table(models,index = ["Feature Selection Method","Model"])
